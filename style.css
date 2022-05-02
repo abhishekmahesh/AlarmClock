@@ -1,0 +1,126 @@
+/* GLobal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: gold;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  color: #32476b;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+select {
+  appearance: none;
+  outline: none;
+  background-color: lightskyblue;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #32476b;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+/* End GLobal Styles */
+
+.container {
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+}
+
+.alarm-clock {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: navajowhite;
+}
+
+.current-time {
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: #32476b;
+}
+
+.alarm-form {
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.submit-btn {
+ background-color: gold;
+ color: #32476b;
+ font-size: 0.8rem;
+ font-weight: bold;
+}
+
+.alarms {
+ width: 100%;
+}
+
+.alarms .title {
+ color: #32476b;
+ font-weight: bold;
+}
+
+.alarm {
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  background-color: lightskyblue;
+}
+
+.alarm .delete-alarm {
+ background-color: gold;
+}
+
+.time {
+  color: #32476b;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+/* style of devices of screen size less than 768px */
+@media only screen and (min-width: 600px) {
+  /* adding padding to container */
+  .container {
+    padding-block: 3rem;
+  }
+  .alarm-clock{
+      justify-content: center;
+      border-radius: 15px;
+      width: 450px;
+      min-height: auto;
+  }
+  
+}

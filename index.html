@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alarm Clock using Vanilla JS</title>
+ 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+
+    <div class = "container d-flex">
+      <div class="current-time mb">_ : _ : _ </div>
+    </div>
+
+    <div class = "container d-flex">
+      <div class="alarm-clock d-flex">
+        <form class="alarm-form d-flex mb">
+
+          <div>
+            <select required name="hours"   id="hours" ></select>
+            <select required name="minutes" id="minutes"></select>
+            <select required name="seconds" id="seconds"></select>
+            <select required name="am-pm"   id="am-pm">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </div>
+
+          <button class="btn submit-btn" id="submit-btn" type="submit">Set Alarm</button>
+
+        </form>
+      </div>
+    </div>
+
+
+    <div class = "container d-flex">
+      <div class="alarm-clock d-flex">
+        <div class="alarms">
+          <div class="title mb">Alarms</div>
+            <div class="alarms-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- JavaScript File -->
+    <script src="./script.js"></script>
+  </body>
+</html>
+
